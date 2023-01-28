@@ -6,6 +6,7 @@ Created on Sat Jan 28 15:44:49 2023
 """
 import streamlit as  st
 import pandas as pd
+st.header('Fahad Ahmed')
 #file = r'C:\Users\dell\Desktop\Karachi.AI\Python\CLASS content\CLASS_2\Billionaire.csv'
 #Read the file
 df=pd.read_csv('Billionaire.csv')
@@ -23,10 +24,10 @@ USA= df[df['Country']==1]
 USA['NetWorth'].sum()
 
 #Interactivity
-all_countries= df['Country'].unique()
-selection = st.selectbox('Select Country', all_countries)
-subset = df[df['Country']==selection]
-st.dataframe(subset)
+#all_countries= df['Country'].unique()
+#selection = st.selectbox('Select Country', all_countries)
+#subset = df[df['Country']==selection]
+#st.dataframe(subset)
 
 #Container for data (Just like on Tableu)
 all_countries = sorted(df['Country'].unique())
