@@ -6,9 +6,9 @@ Created on Sat Jan 28 15:44:49 2023
 """
 import streamlit as  st
 import pandas as pd
-file = r'C:\Users\dell\Desktop\Karachi.AI\Python\CLASS content\CLASS_2\Billionaire.csv'
+#file = r'C:\Users\dell\Desktop\Karachi.AI\Python\CLASS content\CLASS_2\Billionaire.csv'
 #Read the file
-df=pd.read_csv(file)
+df=pd.read_csv('Billionaire.csv')
 
 top_bill = df[df['Rank']==1]
 
